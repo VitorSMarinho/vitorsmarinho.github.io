@@ -85,6 +85,7 @@ h6 {
 }
 
 .nav .social{
+  color: var(--white);
   padding: 1.4rem 0;
 }
 
@@ -119,7 +120,6 @@ h6 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  
   transition: 1s all ease;
   color: var(--white);
   font-size: 2rem;
@@ -142,6 +142,13 @@ h6 {
   display: block;
 }
 
+.border-img:hover{
+  -webkit-filter: drop-shadow(15px 10px 5px rgba(88, 47, 113, 0.5));
+  filter: drop-shadow(15px 10px 5px rgba(83, 65, 101, 0.5));
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
 .card-p-h2{
   color: var(--texto-gray);
   font-family: var(--Noto_Serif_Display);
@@ -154,9 +161,10 @@ h6 {
   padding: 96px 48px;
   background-color: #080713;
   padding-bottom: 3px;
+  min-height: 80vh;
 }
 
-.card2 .card2-h3{
+.card2 .card2-h2{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -170,7 +178,10 @@ h6 {
   color: var(--texto-gray);
   font-size: 1.2rem;
   font-family: var(--Noto_Serif_Display);
-  min-height: 150px;
+}
+
+.card2-p-layout{
+  max-width: 1000px;
 }
 
 .card-layout{
@@ -183,18 +194,23 @@ h6 {
 
 }
 .small-card{
-  border: 0.5px solid #ccc;
   line-height: 4rem;
 }
+
+/*.small-card:hover img{
+  border: 0.5px solid var(--white);
+  background-color: var(--midnigth);
+  transition: all 0.5s ease;
+}
+*/
 
 .icons-layout{
   display: grid; 
   grid-template-columns: 1fr; 
   grid-template-rows: 1fr ;
   grid-template-areas: 
-    ". . ."
-    ". . ."
-    ". . .";
+  ". . . "
+  ". . . ";
   gap: 20px 20px;
 }
 
@@ -203,25 +219,11 @@ h6 {
   grid-template-columns: 1fr; 
   grid-template-rows: 1fr; 
   gap: 20px 20px; 
-  
   grid-template-areas: 
-    ". . ."
-    ". . ."
-    ". . ."; 
-  padding-left: 70px;
+    ". . . . . ."
+    ". . . . . ."; 
+  padding-left: 50px;
   
-}
-
-.icons-layout-base2{
-  display: grid; 
-  grid-template-columns: 4fr; 
-  grid-template-rows: 4fr; 
-  gap: 20px 20px; 
-  grid-template-areas: 
-    ". . ."
-    ". . ."
-    ". . ."; 
-  padding-left: 70px;  
 }
 
 .skills-icons{
@@ -232,5 +234,13 @@ h6 {
   background-color: #0b0a17;
   color: var(--texto-gray);
   font-size: 2rem;
-  padding: 30px 30px;
+  padding: 18px 18px;
+  transition: 1s all ease;
+}
+
+.skills-icons:hover{
+  border: 0.5px solid var(--white);
+  background-color: var(--midnigth);
+  transition: all 0.5s ease;
+  
 }
