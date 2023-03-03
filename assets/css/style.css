@@ -197,13 +197,6 @@ h6 {
   line-height: 4rem;
 }
 
-/*.small-card:hover img{
-  border: 0.5px solid var(--white);
-  background-color: var(--midnigth);
-  transition: all 0.5s ease;
-}
-*/
-
 .icons-layout{
   display: grid; 
   grid-template-columns: 1fr; 
@@ -223,7 +216,7 @@ h6 {
     ". . . . . ."
     ". . . . . ."; 
   padding-left: 50px;
-  
+  position: relative;
 }
 
 .skills-icons{
@@ -236,11 +229,48 @@ h6 {
   font-size: 2rem;
   padding: 18px 18px;
   transition: 1s all ease;
+  
 }
 
 .skills-icons:hover{
   border: 0.5px solid var(--white);
   background-color: var(--midnigth);
-  transition: all 0.5s ease;
-  
+  transition: all 1s ease;
+}
+/* estilizando um span com a informação do nome do icone */
+/*
+.skills-cards-name-high{
+  color: var(--texto-gray);
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: var(--Noto_Serif_Display);
+  background-color: #0b0a17;
+  visibility: hidden;
+  position: absolute;
+}
+
+.skills-cards-name-high:hover span{
+  visibility: visible;
+  transition: all 1s ease;
+  margin-top: auto;
+}
+*/
+
+.card3-projetos {
+  padding: 96px 48px;
+  background-color: #0b0a17;
+  min-height: 80vh;
+  transition: 1s all ease;
+  font-size: 2rem;
+  font-family: var(--Noto_Serif_Display);
+}
+
+.card3-projetos h2{
+  color: var(--white);
+  font-size: 2rem;
+  font-family: var(--Noto_Serif_Display);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
