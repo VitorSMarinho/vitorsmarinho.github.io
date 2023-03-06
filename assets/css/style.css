@@ -11,7 +11,7 @@ html, body{
   --background-image: linear-gradient(45deg,black, #483D8B);
   --bg-color: #0f0f0f;
   --white: #ffffff;
-  --midnigth: #483D8B;
+  --midnigth: #413491;
 }
 
 /* -----------Global------------*/
@@ -105,7 +105,7 @@ h6 {
 /* ---------Conteúdo Pagina---------*/
 
 .card1 {
-  min-height: 50vh;
+  min-height: 30vh;
   padding: 98px 100px;
   background-color: #0b0a17;
   display: flex;
@@ -260,7 +260,7 @@ h6 {
 .card3-projetos {
   padding: 96px 48px;
   background-color: #0b0a17;
-  min-height: 80vh;
+  min-height: 50vh;
   transition: 1s all ease;
   font-size: 2rem;
   font-family: var(--Noto_Serif_Display);
@@ -287,6 +287,7 @@ h6 {
   align-items: center;
   padding: 10px;
   margin: 0 auto;
+  position: relative;
 }
 /*
 .card3-grid:hover{
@@ -301,11 +302,21 @@ h6 {
 }
 */
 .img .card3-projetos{
-  margin: 0 auto;  
+    
 }
 
+.card3-p{
+  color: var(--texto-gray);
+  font-size: 1.2rem;
+  font-family: var(--Noto_Serif_Display);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .efeitos1{
   background-color: #080713;
+  position: relative;
 }
 
 .efeitos1:hover{
@@ -370,7 +381,8 @@ h6 {
   border: none;
   transition: 1s all ease;
 }
-
+/*------------ style @media para configurar resposividade *dando erro*----------*/
+/*
 @media (max-width: 768px) {
   .card3-flex{
     display: grid;
@@ -380,4 +392,46 @@ h6 {
     margin: 0 auto;
     justify-content: center;
   }
+} */
+
+.card3-div-a{
+  font-size: 1.1rem;
+  font-family: var(--Noto_Serif_Display);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 200px;
+}
+
+.stylegithub{
+  color: var(--midnigth);
+}
+
+.stylegithub:hover{
+  color: var(--white);
+}
+
+.footer-hr{
+  border-color: var(--texto-gray);
+  opacity: 0.5;
+  background: var(--texto-gray);
+  
+}
+
+.footer-box{
+  background-color: #0b0a17;
+  padding: 32px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.2rem;
+  font-family: var(--Noto_Serif_Display);
+  color: var(--texto-gray);
+}
+
+.footer-top{
+  margin-top: 30px;
 }
