@@ -1,8 +1,21 @@
-html, body{
+/* Make layout fluid */
+* {
+  box-sizing: border-box;
+}
 
+html, body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Add breakpoint */
+@media (min-width: 768px) {
+  /* Add desktop styles here */
 }
 
 :root{
@@ -43,6 +56,64 @@ h6 {
 /* ---------*---------*---------*/
 
 /* ----------- NAV ------------*/
+/* Add desktop styles */
+@media (min-width: 768px) {
+  .nav {
+    height: 10vh;
+  }
+
+  .nav .nav-logo a {
+    font-size: 2rem;
+  }
+
+  .nav .nav-itens .nav-link {
+    font-size: 1.2rem;
+    padding: 1.6rem;
+  }
+
+  .card1 {
+    min-height: 50vh;
+    padding: 100px;
+  }
+
+  .card1 .card-h2 {
+    font-size: 3rem;
+  }
+
+  .card-p-h2 {
+    font-size: 1.5rem;
+    max-width: 800px;
+  }
+
+  .card2 {
+    padding: 100px;
+    min-height: 100vh;
+  }
+
+  .card2-p {
+    font-size: 1.5rem;
+  }
+
+  .card-layout {
+    margin-top: 200px;
+    padding-left: 100px;
+  }
+
+  .small-card {
+    line-height: 6rem;
+  }
+
+  .icons-layout {
+    grid-template-areas: 
+      ". . . . . ."
+      ". . . . . ."
+      ". . . . . ."
+      ". . . . . .";
+    gap: 40px;
+  }
+}
+
+
 .nav{
   background-color: var(--background-image);  
   padding: 0 2rem;
@@ -98,7 +169,7 @@ h6 {
   color: var(--white);
 }
 
-.fundo{
+.container{
   background-image: linear-gradient(45deg,black, #483D8B);
 }
 
