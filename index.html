@@ -1,231 +1,149 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/all.css">
-    <link rel="shortcut icon" href="assets/icons/logo.svg" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    
-    <title>Portifólio // Vitor Marinho</title>
-  </head>
-  <body>
-    <div class="container">
-      <nav class="nav">
-        <div class="nav-menu flex-row">
-          <div class="nav-logo">
-            <a href="home.html">
-              <img
-                src="assets/icons/logo.svg"
-                alt="Logo code"
-                width="30"
-                height="24"
-                class="d-inline-block align-text-top"
-              />
-              VITOR MARINHO</a
-            >
-          </div>
-          <div class="menu">
-            <ul class="nav-itens">
-              <li class="nav-link">
-                <a href="#card-h2">Sobre mim</a>
-              </li>
-              <li class="nav-link">
-                <a href="about.html">Conhecimentos</a>
-              </li>
-              <li class="nav-link">
-                <a href="contact.html">Projetos</a>
-              </li>
-              <li class="nav-link">
-                <a href="contact.html">Contato</a>
-              </li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VTECDATA.SOLUTIONS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #1c2531, #2e3a4d, #111827);
+            color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+        }
+        header, footer {
+            background-color: #1f2937;
+        }
+        nav a {
+            color: #f0f0f0;
+            margin: 0 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .icon {
+            width: 32px;
+            height: 32px;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center min-h-screen">
+
+    <header class="w-full py-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-2xl font-bold">Vitor Marinho</h1>
+            <nav>
+                <a href="#sobre">Sobre</a>
+                <a href="#tecnologias">Tecnologias</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#certificados">Certificados</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-1 w-full max-w-4xl px-4 py-8">
+        
+        <section id="sobre" class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">Sobre Mim</h2>
+            <p class="p-4 bg-[#1E293B] text-white shadow rounded-lg">
+                Transformo dados em valor. Arquiteto e Engenheiro de Dados com foco em soluções escaláveis, seguras e eficientes em Azure. Meu objetivo é simplificar o complexo e entregar resultados que impactam.
+            </p>
+        </section>
+
+        <section id="tecnologias" class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">Tecnologias</h2>
+            <div class="grid grid-cols-3 sm:grid-cols-4 gap-4">
+                <div class="flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" class="icon">
+                    <span>Azure</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="./assets/img/databricks-icon-seeklogo.svg" class="icon">
+                    <span>Databricks</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="./assets/img/02390-icon-service-Azure-SQL.svg" class="icon">
+                    <span>SQL</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="icon">
+                    <span>PySpark</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="./assets/img/power-bi-icon-seeklogo.svg" class="icon">
+                    <span>Power BI</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="./assets/img/00606-icon-service-Azure-Synapse-Analytics.svg" class="icon">
+                    <span>Synapse analytics</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-[var(--primary-text)] mb-4">Meus Projetos</h2>
+            <ul class="space-y-4">
+                <li class="p-4 bg-[#1E293B] text-white shadow rounded-lg">
+                    <h3 class="font-semibold">Pipeline de Ingestão e Processamento</h3>
+                    <p class="text-gray-300">Criação de um pipeline completo no Synapse integrando com Databricks para transformação e armazenamento otimizado em Data Lake.</p>
+                </li>
+                <li class="p-4 bg-[#1E293B] text-white shadow rounded-lg">
+                    <h3 class="font-semibold">Arquitetura para Data Platform</h3>
+                    <p class="text-gray-300">Definição e implementação de uma arquitetura de dados escalável para analytics e reporting usando ferramentas Azure.</p>
+                </li>
+                <li class="p-4 bg-[#1E293B] text-white shadow rounded-lg">
+                    <h3 class="font-semibold">Processos de Ingestão e Governança de Dados</h3>
+                    <p class="text-gray-300">Desenvolvimento de pipeline robusto para ingestão de arquivos JSON com validação de nomenclatura, cópia para Data Lake e tratamento automatizado de erros. Todo o fluxo foi documentado para garantir governança e rastreabilidade.</p>
+                </li>
+                <li class="p-4 bg-[#1E293B] text-white shadow rounded-lg">
+                    <h3 class="font-semibold">Pipeline de Transferência e Disponibilização de Tabelas no Data Lake</h3>
+                    <p class="text-gray-300">Criação de processo automatizado para transferência de tabelas para o Data Lake, com logs detalhados e validação de integridade, garantindo a confiabilidade e disponibilidade para análises posteriores.</p>
+                </li>
+                <li class="p-4 bg-[#1E293B] text-white shadow rounded-lg">
+                    <h3 class="font-semibold">Gerenciamento Centralizado de Servidores com Azure Arc</h3>
+                    <p class="text-gray-300">Implementação de arquitetura de gestão de servidores utilizando Azure Arc, entregando 100% de eficiência no monitoramento e controle remoto. A solução foi desenhada para ser replicável e escalável, tornando-se uma oferta estratégica para clientes da empresa.</p>
+                </li>
+                <li class="p-4 bg-[#1E293B] text-white shadow rounded-lg">
+                    <h3 class="font-semibold">Automação de Processamento de Arquivos CSV via Logic Apps</h3>
+                    <p class="text-gray-300">Desenvolvimento de fluxo automatizado com Logic App para captura de arquivos CSV diretamente de e-mails, com filtros de nomenclatura e extensão. Arquivos são processados, validados e inseridos no banco de dados. Os registros são movidos para repositórios específicos conforme o status (sucesso, falha ou auditoria), garantindo conformidade e rastreabilidade completa.</p>
+                </li>
             </ul>
-          </div>
-          <div class="social --texto-gray">
-            <a href="https://github.com/VitorSMarinho"></a>
-            <i class="fab fa-github"></i>
-            <a href="https://www.linkedin.com/in/vitor-marinho/">
-              <i class="fa-brands fa-linkedin"></i></a>
-            <a href="home.html"><i class="fa-brands fa-instagram"></i></a>
-            <a href="home.html"> <i class="i"></i></a>
-          </div>
-        </div>
-      </nav>
-    </div>
-    <div class="card1">
-      <h2 class="card-h2">Sobre mim <span class="span">.</span></h2>
-      <div class="border-img">
-      <img
-        src="assets/img/foto github.jpg"
-        alt="foto perfil"
-        class="img-perfil"
-      />
-      </div>
-      <p class="card-p-h2">
-        Meu nome é Vitor Marinho. Sou estudande do Curso Sistemas para Internet
-        na Fatec Taquaritinga.<br />
-        Busco me desenvolver atraves de projetos acadêmicos, cursos livres e
-        também criando algo particular, com êxito no meu desenvolvimento com
-        <span class="spanfont">Front-end</span> //
-        <span class="spanfont">Back-end</span>.<br />
-        Busco interfaces modernas e de alta qualidade, concentrado em
-        performance, responsividade e SEO.
-      </p>
-    </div>
-    <section class="card2">
-      <h2 class="card2-h2">Conhecimentos<span class="span">.</span></h2>
-      <div class="card-layout">
-        <div class="card2-p-layout">
-        <p class="card2-p">*Passe o cursos do mause no card para ler*</p>
-        </div>
-        <div class="icons-layout">
-          <div class="icons-layout-base1">
-            <div class="small-card">
-              <!-- span onde aparece o hover com nome do icone-Em construção -->
-              <!-- <span class="skills-cards-name-high">HTML</span> -->
-              <img                
-                src="assets/icons/html5.svg"
-                alt="icone HTML5"
-                width="60px"
-                height="60px"
-                class="skills-icons"
-              />
+        </section>
+        
+
+        <section id="certificados" class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">Certificados</h2>
+            <div class="overflow-hidden relative w-full">
+                <div class="flex animate-scroll space-x-4">
+                    <img src="./assets/img/loading-digital-data.jpg" class="rounded-lg">
+                    <img src="./assets/img/loading-digital-data.jpg" class="rounded-lg">
+                    <img src="./assets/img/loading-digital-data.jpg" class="rounded-lg">
+                </div>
             </div>
-            <div class="small-card">
-              <img
-                src="assets/icons/css3-alt.svg"                
-                alt="icone CSS3"
-                width="60px"
-                height="60px"
-                class="skills-icons"
-              />
-            </div>
-            <div class="small-card">
-              <img
-                src="assets/icons/bootstrap.svg"
-                alt="icone Bootstrap"
-                width="60px"
-                height="60px"
-                class="skills-icons"
-              />
-            </div>
-            <div class="small-card">
-              <img
-                src="assets/icons/spring-boot-svgrepo-com.svg"
-                alt="icone Bootstrap"
-                width="60px"
-                height="60px"
-                class="skills-icons"
-              />
-            </div>
-            <div class="small-card">
-              <img
-                src="assets/icons//dot-net.svg"
-                alt="icone dot-net"
-                width="60px"
-                height="60px"
-                class="skills-icons"
-              />
-            </div>
-            <div class="small-card">
-              <img
-                src="assets/icons/php.svg"
-                alt="icone PHP"
-                width="60px"
-                height="60px"
-                class="skills-icons"
-              />
-            </div>
-            <div class="small-card">
-              <img
-                src="assets/icons/java.svg"
-                alt="icone Java"
-                width="60px"
-                height="60px"
-                class="skills-icons"/>
-            </div>
-            <div class="small-card">
-              <img
-                src="assets/icons/square-js.svg"
-                alt="icone JavaScript"
-                width="60px"
-                height="60px"
-                class="skills-icons"/>
-            </div>
-            <div class="small-card">
-              <img
-                src="assets/icons/react.svg"
-                alt="icone react"
-                width="60px"
-                height="60px"
-                class="skills-icons"/>
-            </div>
-            <div class="small-card">
-              <img
-                src="assets/icons/mysql.svg"
-                alt="icone mysql"
-                width="60px"
-                height="60px"
-                class="skills-icons"/>
-            </div>
-            <div class="small-card">
-              <img
-                src="assets/icons/oracle.svg"
-                alt="icone oracle"
-                width="60px"
-                height="60px"
-                class="skills-icons"/>
-            </div>
-            <div class="small-card">
-              <img
-                src="assets/icons/github.svg"
-                alt="icone github"
-                width="60px"
-                height="60px"
-                class="skills-icons"/>
-            </div> 
-          </div>         
-        </div>
-      </div>
-    </section>
-    <article class="card3-projetos">
-      <h2 class="card3-h2">Projetos<span class="span">.</span></h2>
-      <div class="card3-grid">
-        <div class="efeitos1">
-          <p class="stylecenter"><img src="assets/img/aguarde.png" alt="imagem-aguarde" style="width: 150px"></p>
-          <p class="card3-p">breve explicação do projeto</p>
-        </div>
-        <div class="efeitos2">
-          <img src="assets/img/aguarde.png" alt="imagem-aguarde" style="width: 150px">
-          <p class="card3-p">breve explicação do projeto</p>
-        </div>
-        <div class="efeitos3">
-          <img src="assets/img/aguarde.png" alt="imagem-aguarde" style="width: 150px">
-          <p class="card3-p">breve explicação do projeto</p>
-        </div>
-        <div class="efeitos4">
-          <img src="assets/img/aguarde.png" alt="imagem-aguarde" style="width: 150px">
-          <p class="card3-p">breve explicação do projeto</p>
-        </div>
-      </div>
-      <div class="card3-div-a">
-        <a
-            href="https://github.com/vitorSMarinho?tab=repositories"
-            rel="noopener"
-            target="_blank"
-            class="stylegithub"
-            >Repositórios no GitHub<hr class="hr" width="166px"></a
-          >
-        </div>      
-    </article>
-    <footer>
-      <div class="footer-box">
-        <hr class="footer-hr" width="1140px">
-        <div class="footer-top"></div>
-        <p>© 2023 vitorsmarinho.com</p>
-        </div>
-      </div>
+            <style>
+                @keyframes scroll {
+                    0% { transform: translateX(0); }
+                    100% { transform: translateX(-100%); }
+                }
+                .animate-scroll {
+                    animation: scroll 10s linear infinite;
+                }
+            </style>
+        </section>
+
+        <section id="contato" class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">Contato</h2>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vitor-marinho/" class="text-blue-400">Vitor Marinho</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/VitorSMarinho" class="text-blue-400">VitorSMarinho</a></p>
+            <p><strong>E-mail:</strong> <a href="mailto:vtechdata.solutions@outlook.com.br" class="text-blue-400">vtechdata.solutions@outlook.com.br</a></p>
+        </section>
+
+    </main>
+
+    <footer class="w-full py-4 text-center">
+        <p>© 2025 Vitor Marinho - Todos os direitos reservados.</p>
     </footer>
-  </body>
+
+</body>
 </html>
